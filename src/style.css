@@ -1,0 +1,240 @@
+
+body {
+  background-color: black;
+}
+header {
+  background: #53e3a6;
+  position: fixed;
+  width: 100%;
+  height: clamp(5rem, 6vw, 6rem);
+  z-index: 1;
+  display: inline-block;
+  margin-top: 0;
+}
+#nav-bar {
+  padding-top: clamp(1.5rem, 1.8vw, 2rem);
+  text-align: right;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 0em 1em 0em 1em;
+  font-size: clamp(1.3rem, 3vw, 2.5rem);  
+  font-family: "OrbitRacerOrbitRacer";
+}
+#logo {
+  margin-top:-1.8em;
+  margin-left:0;
+  position: absolute;
+}
+
+
+.nav-link:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.dot {
+  font-size: clamp(0.5rem, 1.5vw, 1.8rem);
+}
+.dot:hover {
+  color: black;
+  cursor: default;
+}
+
+#video-section {
+  text-align: center;
+}
+#lines {
+  height: 26em;
+  width: 100%;
+  background: repeating-linear-gradient(
+    -55deg,
+    white 2px,
+    rgba(255, 255, 255, 0.7) 1px,
+    transparent 10px,
+    transparent 30px
+  );
+}
+.background-vid {
+  margin-top: clamp(5em, 10vw, 10rem);
+  width: 100%;
+  height: 26em;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+}
+
+#video {
+  margin-top: clamp(2rem, 3vw, 3rem);
+  width: clamp(20rem, 50vw, 35rem);
+  border: dashed 0.3em black;
+}
+
+#video:hover {
+  border: dashed 0.3em white;
+}
+#products {
+padding-top: 5em;
+  height: auto;
+  width:100%;
+    
+}
+#products-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 4em auto;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+@media (max-width: 30.625em) {
+  .products-section {
+    padding: 6rem 1rem;
+  }
+
+  #products-div {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product {
+  background:
+    -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.product:hover {
+  background-color: #b5f2d5;
+}
+.product-image {
+  height: 23rem;
+  width: clamp(60%, 70%, 75%);
+}
+
+
+.product-title {
+  font: bold 2rem sans-serif;
+  color: black;
+  text-align: center;
+  text-justify: center;
+}
+#about_us {
+  width: 100%;
+  height: auto;
+  color: white;
+ text-align:center;
+  padding-top:7em;
+}
+
+.grid {
+display:flex;
+flex-direction: column;
+}
+
+.icon {
+  color: #53e3a6;
+}
+
+#newsletter-section {
+  margin-top: 8em;
+  text-align: center;
+}
+
+#newsletter-header {
+  color: white;
+  font-size: 2em;
+}
+
+#newsletter-bcg {
+  height: 6em;
+  width: 100%;
+  background: -webkit-linear-gradient(top, #50a3a2 0%, black 100%);
+  text-align: center;
+}
+
+input[type="email"] {
+  background-color: black;
+  color: white;
+  border: black;
+  height: 2em;
+}
+.btn {
+  margin-top: 2em;
+  background: #53e3a6;
+  color: black;
+  border: none;
+  border-radius: 10%;
+  font-weight: bold;
+  font-size: 1em;
+  margin-left: 1em;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: black;
+  color: #53e3a6;
+}
+.contact{
+  width:100%;
+  display: flex;
+  flex-flow: column wrap;
+}
+.flex-container {
+   width: min(95%, 45rem);
+  margin: 2em auto;
+}
+
+
+.columns {
+  display: flex;
+  color:white;
+}
+
+.equal-columns > * {
+  flex: 1;
+}
+h3 {
+  color:#53e3a6;
+   font-family: "OrbitRacerOrbitRacer";
+  font-size: 2em;
+}
+ul {
+  list-style-type: none;
+ line-height: 1.6;
+  padding-left:0;
+}
+.li-links {
+text-decoration:none;
+color:white;
+  padding-left:0;
+  margin-left:0;
+}
+
+
+.footer-bottom{
+  background: #53e3a6;
+  font-size: 1.2em;
+  text-align: center;
+ padding: 0.4em;
+}
+#creator-nick {
+ font-family: "OrbitRacerOrbitRacer";
+  color:black;
+  text-decoration:none;
+}
+
+
+@media only screen and (max-device-width: 800px) {
+  .dot {
+    display: none;
+  }
+  svg {
+    height:4.8em;
+    width:5em;
+  }
+}
